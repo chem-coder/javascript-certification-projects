@@ -14,4 +14,4 @@ Each project demonstrates my understanding of JavaScript fundamentals, including
 - DOM manipulation
 
 🟢 Certification Completed: April 2025  
-🎓 [View my certificate here](https://www.freecodecamp.org/certification/your-username/javascript-algorithms-and-data-structures)
+🎓 [View my certificate here](https://www.freecodecamp.org/certification/fcc2bfeefea-3e41-4a73-81e8-7b1ce0283010/javascript-algorithms-and-data-structures)
