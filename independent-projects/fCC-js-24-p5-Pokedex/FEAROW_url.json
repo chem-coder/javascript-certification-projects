@@ -1,0 +1,32 @@
+{	
+"base_experience": 155,
+"height": 12,
+"id": 22,
+"name": "fearow",
+"order": 31,
+"sprites": 
+	{
+	"back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png", 
+	"back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/22.png",
+	"front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png", 
+	"front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/22.png"
+	},
+"stats": 
+	[
+		{ "base_stat": 65, "effort": 0, "stat": 
+			{ "name": "hp", 
+			  "url": "https://pokeapi.co/api/v2/stat/1/" 
+			}}, 
+		{ "base_stat": 90, "effort": 0, "stat": { "name": "attack", "url":"https://pokeapi.co/api/v2/stat/2/"}},
+		{ "base_stat": 65, "effort": 0, "stat": { "name": "defense","url":"https://pokeapi.co/api/v2/stat/3/"}},
+		{ "base_stat": 61, "effort": 0, "stat": { "name": "special-attack","url":"https://pokeapi.co/api/v2/stat/4/"}},
+		{ "base_stat": 61, "effort": 0, "stat": { "name": "special-defense","url":"https://pokeapi.co/api/v2/stat/5/"}},
+		{ "base_stat": 100, "effort": 2, "stat": { "name": "speed","url":"https://pokeapi.co/api/v2/stat/6/"}}
+	],
+"types": 
+	[
+		{ "slot": 1, "type": { "name": "normal", "url": "https://pokeapi.co/api/v2/type/1/" }},
+		{ "slot": 2, "type": { "name": "flying", "url": "https://pokeapi.co/api/v2/type/3/" }}
+	],
+"weight": 380
+}

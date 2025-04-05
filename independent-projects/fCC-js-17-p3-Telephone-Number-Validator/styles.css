@@ -1,0 +1,151 @@
+:root {
+	--dark-gray: #222831; 
+	--gray: #393e46; 
+	--orange: #f96d00; 
+	--white: #f2f2f2; 
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.regular-font {
+	font-family: "Source Code Pro", monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.title-font {
+    font-family: "Orbitron", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--orange);
+}
+
+body {
+	background-color: var(--gray);
+	color: var(--orange);
+	align-items: center;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 40vw;
+	min-width: 300px;
+	margin: auto;
+	margin-top: 100px;
+
+	border-radius: 20px;
+
+	padding: 30px;
+	background-color: var(--dark-gray);
+}
+
+.inner-container {
+	margin: 5px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#title-box {
+	margin-top: 0;
+	padding-top: 0;
+
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#decor-line{
+	background-color: var(--orange);
+	width: 100%;
+	height: 2px;
+	margin: 15px 0 5px 0;
+}
+
+#input-box {
+	background-color: var(--gray);
+	text-align: center;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+#user-input {
+	background-color: var(--white);
+	width: 40%;
+	min-width: 180px;
+	margin: 5px;
+
+	font-family: "Source Code Pro", monospace;
+  	font-weight: 300;
+  	font-style: normal;
+	font-size: 18px;
+}
+
+label {
+	margin: 5px;
+}
+
+#controls-div {
+	justify-content: space-evenly;
+}
+
+button {
+	background-color: var(--gray);
+	padding: 7px;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 7px;
+
+    transition: all 0.2s ease-in-out; /* Smooth transitions */
+    cursor: pointer;
+}
+
+button:hover {
+	box-shadow: 5px 2px 2px green;
+	color: green;
+}
+
+button:focus {
+    box-shadow: 5px 2px 2px var(--orange); /* Matches active */
+    outline: 1px solid var(--orange); /* Ensures visible focus */
+}
+
+button:active {
+	transform: scale(0.98); /* Subtle click effect */
+	box-shadow: 0px 0px 10px green;
+	outline: 2px solid green;
+}
+
+#output-div {
+	display: none;
+	background-color: var(--gray);
+	text-align: center;
+}
+
+#results-div {
+	padding: 5px 20px;
+}

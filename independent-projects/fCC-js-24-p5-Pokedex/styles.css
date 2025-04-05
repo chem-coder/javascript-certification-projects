@@ -1,0 +1,356 @@
+:root {
+	/*colors*/
+	--red: #fd5959;
+  --orange: #ff9c6d;
+	--yellow: #fcff82;
+	--periwinkle: #afc5ff;
+/* Body text, icons, or UI dividers. */
+	--charcoal: #2f2f2f;
+	--slate-gray: #3a3a3a;
+/* Headings, buttons, links */
+	--deep-indigo: #2b2e66; 	
+	--ink: #1c1e4c;
+/* Call-to-action buttons or navbars. */
+	--dark-teal: #0e2c36;
+	--blue-black: #1a4341;
+/* Others */
+	--white: #ffffff;
+	--near-black: #121212;
+
+	/*font families*/
+	--font-press-start: "Press Start 2P", system-ui;
+  --font-monofett: "Monofett", monospace;
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif; 
+
+  /*font defaults*/
+  font-size: 20px;
+  --font-base-weight: 400;
+  --font-base-style: normal;
+}
+
+.type-swatches {
+	margin: 180px auto 60px auto;
+	width: 50vw;
+	border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 12px;
+  padding: 15px;
+  background-color: var(--white);
+	border: 2px solid var(--deep-indigo);
+}
+
+#types {
+	display: flex;
+	flex-direction: row;
+	margin: 15px auto 5px auto;
+	gap: 10px;
+}
+
+.swatch, .type {
+	width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 1px solid var(--deep-indigo);
+/*  font-weight: bold;*/
+/*  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.swatch:hover {
+  transform: scale(1.05);
+}
+
+.type-normal    { background-color: #b5b5b5; color: #121212; }
+.type-fire      { background-color: #ff6b3b; }
+.type-water     { background-color: #4b9ca6; }
+.type-electric  { background-color: #ffe454; color: #2f2f2f; }
+.type-grass     { background-color: #7dcf83; color: #1a1a1a; }
+.type-ice       { background-color: #a0e8f7; color: #1a1a1a; }
+.type-fighting  { background-color: #c84848; }
+.type-poison    { background-color: #a066c9; }
+.type-ground    { background-color: #d1a25d; color: #1a1a1a; }
+.type-flying    { background-color: #9fb7f0; color: #1a1a1a; }
+.type-psychic   { background-color: #ec7ec4; color: #1a1a1a; }
+.type-bug       { background-color: #aac84c; color: #1a1a1a; }
+.type-rock      { background-color: #c5ae87; color: #1a1a1a; }
+.type-ghost     { background-color: #5e5d92; }
+.type-dragon    { background-color: #6f78da; }
+.type-dark      { background-color: #2e2e2e; }
+.type-steel     { background-color: #a4aab2; color: #1a1a1a; }
+.type-fairy     { background-color: #f5b8e2; color: #1a1a1a; }
+
+.fredoka-<uniquifier> {
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.quicksand-<uniquifier> {
+  font-optical-sizing: auto;
+}
+
+body {
+	margin: 0;
+
+	text-align: center;
+	background-size: cover;
+	min-height: 100vh;
+/*	background-position: center;*/
+	background-image: linear-gradient(
+		180deg,
+		var(--red) 0%,
+		var(--red) 5%,
+		var(--yellow) 25%,
+		var(--yellow) 35%, 
+		var(--periwinkle) 75%,
+		var(--periwinkle) 100%
+	);
+
+	color: var(--ink);
+	font-family: var(--font-fredoka);
+}
+
+h1 {
+  font-family: var(--font-press-start);
+  font-size: 2.2rem;
+  color: var(--ink);
+  padding-top: 10px;
+}
+
+main {
+	margin: 0 auto;
+	width: 50vw;
+	border: 2px solid var(--deep-indigo);
+	border-radius: 20px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+	font-size: 1rem;
+}
+
+input {
+	background: var(--periwinkle);
+  border: 1px solid var(--deep-indigo);
+  border-radius: 15px ;
+  font-size: 1rem;
+  font-family: var(--font-fredoka);
+  outline-color: var(--deep-indigo);
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+  background: var(--periwinkle);
+  border: 1px solid var(--deep-indigo);
+  border-radius: 15px ;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--font-fredoka);
+  outline-color: var(--deep-indigo);
+  text-align: center;
+}
+
+button:focus {
+
+}
+
+img {
+	margin: 20px;
+}
+
+#img-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.img-button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 5px;
+  border: 1px solid var(--deep-indigo);
+  border-radius: 8px;
+  background-color: var(--yellow); /* Or whatever fits your style */
+  color: var(--deep-indigo);
+  cursor: pointer;
+}
+
+.img-button:focus {
+  outline: 2px solid var(--yellow); /* or remove outline if you prefer */
+}
+
+
+#intro-field {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px 0 0 20px;
+}
+
+#intro-field > p {
+	margin: 0;
+}
+
+#img-field {
+
+}
+
+table {
+	padding: 10px;
+}
+
+tr {
+	height: 40px;
+}
+
+th {
+	border: 1px solid var(--deep-indigo);
+	border-radius: 10px;
+	font-family: var(--font-monofett);
+	font-size: 2.5em;
+	color: var(--deep-indigo);
+	background-color: var(--yellow);
+}
+
+td {
+	border: 1px solid var(--deep-indigo);
+	border-radius: 10px;
+	background: var(--yellow);
+	min-width: 8vw;
+}
+
+#results {
+
+}
+
+.hidden {
+	display: none;
+}
+
+/* Extra small (phones) 0 – 480px */
+@media (max-width: 480px) {
+  main, .type-swatches {
+    width: 90vw;
+  }
+
+  .swatch, .type {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+
+  #intro-field {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  th {
+    font-size: 1.5em;
+  }
+
+  td {
+    min-width: auto;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  #sprite {
+    width: 120px;
+  }
+
+  #img-buttons {
+    gap: 5px;
+  }
+
+  .img-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+/* Small (phones/phablets) 481 – 767px */
+@media (max-width: 767px) {
+  main, .type-swatches {
+    width: 85vw;
+  }
+
+  .swatch, .type {
+    width: 90px;
+    font-size: 0.9rem;
+  }
+
+  #sprite {
+    width: 150px;
+  }
+
+  td {
+    font-size: 0.9rem;
+  }
+
+  th {
+    font-size: 2em;
+  }
+}
+
+/* Medium (tablets) 768 – 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main, .type-swatches {
+    width: 70vw;
+  }
+
+  .swatch, .type {
+    width: 100px;
+  }
+
+  th {
+    font-size: 2.2em;
+  }
+
+  td {
+    font-size: 1rem;
+  }
+
+  #sprite {
+    width: 180px;
+  }
+}
+
+/* Large (small laptops) 1025 – 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  main, .type-swatches {
+    width: 60vw;
+  }
+
+  #sprite {
+    width: 200px;
+  }
+}
+
+/* Extra large (desktops) 1281px + */
+@media (min-width: 1281px) {
+  main, .type-swatches {
+    width: 50vw;
+  }
+
+  #sprite {
+    width: 220px;
+  }
+}

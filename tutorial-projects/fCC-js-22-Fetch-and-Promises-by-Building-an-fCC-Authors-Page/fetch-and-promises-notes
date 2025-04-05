@@ -1,0 +1,47 @@
+If you want data from an online source, you need use an API (Application Programming Interface). An API lets people from outside of an organization retrieve its internal data.
+
+There is a method called fetch that allows code to receive data from an API by sending a GET request.
+
+Here is how you can make a GET request with the fetch() method:
+
+fetch("url-goes-here")
+
+
+
+The fetch() method returns a Promise, which is a placeholder object that will either be fulfilled if your request is successful, or rejected if your request is unsuccessful.
+
+If the Promise is fulfilled, it resolves to a Response object, and you can use the .then() method to access the Response.
+
+Here's how you can chain .then() to the fetch() method:
+
+Example Code
+fetch("sample-url-goes-here")
+  .then((res) => res)
+
+
+
+  The data you get from a GET request is not usable at first. To make the data usable, you can use the .json() method on the Response object to parse it into JSON. If you expand the Prototype of the Response object in the browser console, you will see the .json() method there.
+
+fetch("sample-url-goes-here")
+  .then((res) => res.json()))
+
+
+  In order to start working with the data, you will need to use another .then() method.
+
+fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+
+
+The .catch() method is another asynchronous JavaScript method you can use to handle errors. This is useful in case the Promise gets rejected.
+
+fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+  	.then(res => res.json())
+  	.then(data => console.log(data))
+	.catch(err => console.error(`There was an error: ${err}`));
+
+
+When the fetched data contains lots of information (e.g., an array of 26 authors), adding all the data at once may lead to poor performance. 
+Instead, you should add it a little at a time (e.g., 8 authors at a time, and have a button to add 8 more until there's no more data to display).

@@ -1,0 +1,300 @@
+:root {
+	--light-green: #CBDFBD;
+	--green: #44633F;
+	--dark-green: #253031;
+	--gold: #ec9f05;
+	--brown: #8B5E3C;        /* warm, medium earthy brown */
+	--dark-brown: #4E3620;   /* deep, rich walnut-like brown */
+	--light: #F5EBDD;       /* soft sand, natural and grounded */
+	--light-light: #FFFCF7; /* gentle ivory, brighter & cleaner */
+	--bright-accent: #E3170A;
+	--font: Times New Roman;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--dark-green);
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	color: var(--light);
+	font-size: 40px;
+	text-shadow: 1px 1px 1px var(--bright-accent);
+}
+
+#drawer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	padding: 10px;
+	margin: 10px auto;
+
+	width: 600px;
+	background: var(--light);
+	border-radius: 25px;
+	border: 1px solid var(--bright-accent);
+}
+
+#coins {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+#bills {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.money-in-drawer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2px;
+	padding: 3px;
+}
+
+#coins > .money-in-drawer {
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#bills > .money-in-drawer {
+	flex-direction: column;
+}
+
+
+/*COINS*/
+.currency-coins {
+
+}
+
+.outer-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	background: var(--gold);
+	border: 2px solid var(--dark-brown);
+}
+
+#penny-width {
+	width: 45px;
+	height: 45px;
+}
+
+#nickel-width {
+	width: 48px;
+	height: 48px;	
+}
+
+#dime-width {
+	width: 51px;
+	height: 51px;	
+}
+
+#quarter-width {
+	width: 54px;
+	height: 54px;
+}
+
+.inner-circle-coin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	background: var(--brown);
+	border: 1px solid var(--dark-brown);
+	width: 78%;
+	height: 78%;
+}
+
+.coin-text {
+	color: var(--gold);
+	border: none;
+	font-size: 24px;
+	font-weight: bold;
+
+	text-shadow: 
+		-1px -1px 0 darkred,
+		1px -1px 0 darkred,
+		-1px  1px 0 darkred,
+		1px  1px 0 darkred;
+}
+
+
+/*BILLS CSS*/
+
+.currency-bills {
+	height: 100px;
+	width: 50px;
+  overflow: visible;
+}
+
+.rotate {
+	transform: rotate(90deg);
+}
+
+.outer-square {
+	position: relative;
+	top: 30px;
+	left: -23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--green);
+  border: 2px solid var(--dark-green);
+  border-radius: 2px;
+
+  width: 94px;
+  height: 40px;
+}
+
+.inner-square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--light-green);
+
+	width: 88%;
+	height: 77%;
+}
+
+.inner-circle-bill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--green);
+	border-radius: 50%;
+}
+
+#one {	
+	width: 33px;
+	height: 33px;
+}
+
+#five {
+	width: 36px;
+	height: 33px;
+}
+
+#ten {
+	width: 42px;
+	height: 33px;
+}
+
+#twenty {
+	width: 42px;
+	height: 33px;
+}
+
+#hundred{
+	width: 55px;
+	height: 33px;
+}
+
+.bill-text {
+	color: var(--light-green);
+	border: none;
+	font-size: 24px;
+	font-weight: bold;
+
+	text-shadow:
+		-1px -1px 0 var(--dark-green),
+		1px -1px 0 var(--dark-green),
+		-1px  1px 0 var(--dark-green),
+		1px  1px 0 var(--dark-green);
+}
+
+/*AMOUNT OF MONEY IN REGISTER*/
+.amount {
+	display: block;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 80%;
+	padding: 5px;
+	margin: 5px;
+	margin-top: 10px;
+	background: var(--light-light);
+	border: 1px solid var(--bright-accent);
+	font-size: 18px;
+}
+
+p, label, input, button, .line {
+	display: block;
+	text-align: center;
+	margin: 2px auto;
+	font-size: 20px;
+}
+
+p, label {
+	color: var(--light);
+}
+
+input, button {
+	background: var(--light-light);
+	color: var(--dark-green);
+	border: 1px solid var(--bright-accent);
+	border-radius: 5px;
+	font-family: var(--font);
+}
+
+.line {
+	width: 12%;
+	border-top: 2px double var(--light);
+	padding: 5px;
+	position: relative;
+	top: 6px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+@media (max-width: 720px) {
+	#drawer {
+		max-width: 300px;		
+	}
+}
+
+/*Extra small (phones)	0 – 480px	*/
+@media (max-width: 480px) {
+
+}
+
+/*Small (phones/phablets)	481 – 767px	*/
+@media (max-width: 767px) {
+
+}
+
+/*Medium (tablets)	768 – 1024px	*/
+@media (min-width: 768px) {
+
+}
+
+/*Large (small laptops)	1025 – 1280px	*/
+@media (min-width: 1025px) {
+
+}
+
+/*Extra large (desktops)	1281px +	*/
+@media (min-width: 1281px) {
+
+}

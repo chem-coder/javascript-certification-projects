@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokémon Search App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Monofett&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Pokédex</h1>
+	<main>
+		<p>Hi there! Which Pokémon do you want to look up today?<br>You can search by Pokémon Name or ID:</p>
+		
+		<div id=input-field>
+			<input id="search-input" required value="Pikachu">
+			<button id="search-button">Search</button>			
+		</div>
+
+		<div id="intro-field">
+			<p><span id="pokemon-name"></span><span id="pokemon-id"></span></p>
+			<p><span id="weight"></span><span id="height"></span></p>
+		</div>
+
+		<div id="img-field" class="hidden">
+			<img id="sprite" src="" alt="" width="200px" height="">
+			<div id="img-buttons">
+				<button id="img-back-btn" class="img-button" aria-label="Previous sprite"><</button>
+				<button id="img-fwd-btn" class="img-button" aria-label="Next sprite">></button>				
+			</div>
+		</div>
+
+		<div id="types"></div>
+
+		<table id="stats-table" class="hidden">
+			<thead>
+				<tr>
+					<th colspan="2">Base Stats</th>
+				</tr>
+				<tr>
+					<td>HP:</td>
+					<td id="hp"></td>
+				</tr>
+				<tr>
+					<td>Attack:</td>
+					<td id="attack"></td>
+				</tr>
+				<tr>
+					<td>Defense:</td>
+					<td id="defense"></td>
+				</tr>
+				<tr>
+					<td>Special Attack:</td>
+					<td id="special-attack"></td>
+				</tr>
+				<tr>
+					<td>Special Defense:</td>
+					<td id="special-defense"></td>
+				</tr>
+				<tr>
+					<td>Speed:</td>
+					<td id="speed"></td>
+				</tr>
+			</thead>
+		</table>
+	</main>
+
+	<div class="type-swatches hidden">
+	  <div class="swatch type-normal">Normal</div>
+	  <div class="swatch type-fire">Fire</div>
+	  <div class="swatch type-water">Water</div>
+	  <div class="swatch type-electric">Electric</div>
+	  <div class="swatch type-grass">Grass</div>
+	  <div class="swatch type-ice">Ice</div>
+	  <div class="swatch type-fighting">Fighting</div>
+	  <div class="swatch type-poison">Poison</div>
+	  <div class="swatch type-ground">Ground</div>
+	  <div class="swatch type-flying">Flying</div>
+	  <div class="swatch type-psychic">Psychic</div>
+	  <div class="swatch type-bug">Bug</div>
+	  <div class="swatch type-rock">Rock</div>
+	  <div class="swatch type-ghost">Ghost</div>
+	  <div class="swatch type-dragon">Dragon</div>
+	  <div class="swatch type-dark">Dark</div>
+	  <div class="swatch type-steel">Steel</div>
+	  <div class="swatch type-fairy">Fairy</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

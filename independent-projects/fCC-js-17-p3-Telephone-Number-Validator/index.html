@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="container">
+		
+		<div class="inner-container" id="title-box">
+			<h1 class="title-font">US Phone Number Validator</h1>
+			<div id="decor-line"></div>
+		</div>
+
+		<div class="inner-container" id="input-box">
+			<label class="regular-font" for="user-input" aria-label="">Enter a phone number:</label>
+			<input class="regular-font" id="user-input" type="text" value="1 555-555-5555" placeholder="1 (XXX) XXX-XXXX"/>			
+		</div>
+		
+		<div class="inner-container" id="controls-div">
+			<button class="title-font" type="button" id="check-btn" aria-label="Validate phone number" >Check</button>
+			<button class="title-font" type="button" id="clear-btn" aria-label="Clear  the input window">Clear</button>
+		</div>
+
+		<div class="inner-container" id="output-div">
+			<div class="regular-font" id="results-div"></div>
+		</div>
+
+	</div>
+
+	<script defer src="script.js"></script>
+</body>
+
+</html>

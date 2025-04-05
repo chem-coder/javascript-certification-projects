@@ -1,0 +1,45 @@
+- asynchronous operation - 
+ means that tasks execute independently of the main program flow;
+ use to request the data from an API
+
+- async -
+ keyword to create an asynchronous function;
+ returns a promise.
+
+	const fetchData = async () => {}; // returns a promise
+
+
+
+.catch() 
+	a method used to handle errors. // used in the previous fetch & promises project
+
+
+try...catch 
+	statement used to handle errors. 
+	The try block is designed to handle potential errors, 
+	and the code inside the catch block will be executed in case an error occurs.
+
+	try {
+	  const name = "freeCodeCamp";
+	  name = "fCC";
+	} catch (err) {
+	  console.log(err); // TypeError: Assignment to constant variable.
+	}
+
+
+
+fetch().then() 
+	this method was used in the previous project 
+	to perform logic after the promise was resolved. 
+
+await 
+	keyword used to handle the asynchronous nature of the fetch() method.
+	The await keyword waits for a promise to resolve and returns the result.
+
+	const example = async () => {
+	  const data = await fetch("https://example.com/api");
+	  console.log(data);
+	}
+
+
+

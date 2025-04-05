@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main>
+	<h1>Cash Register</h1>
+
+	<p id="price-p">Item price: $<span id="price"></span></p>
+	<div class="line"></div>
+	<p id="you-gave"></p>
+	<p class="hide" id="change-due"></p>
+	<div class="line hide" id="change-due-line"></div>
+	<label for="cash">Enter cash from customer: </label>
+	<input type="text" name="" id="cash" value="" placeholder="Enter a $ amount">
+	<button id="purchase-btn">Purchase</button>
+	<div class="line"></div>
+	<p id="register-total"></p>
+	<div id="drawer">
+		<div id="coins">
+
+			<div class="money-in-drawer">
+				<div class="currency-coins">
+					<div class="outer-circle" id="penny-width">
+						<div class="inner-circle-coin">
+							<p class="coin-text" id="penny">1&#162;</p>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="pennies-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-coins">
+					<div class="outer-circle" id="nickel-width">
+						<div class="inner-circle-coin">
+							<p class="coin-text" id="nickel">5&#162;</p>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="nickels-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-coins">
+					<div class="outer-circle" id="dime-width">
+						<div class="inner-circle-coin">
+							<p class="coin-text" id="dime">10&#162;</p>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="dimes-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-coins">
+					<div class="outer-circle" id="quarter-width">
+						<div class="inner-circle-coin">
+							<p class="coin-text" id="quarter">25&#162;</p>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="quarters-amount"></span></div>
+			</div>
+
+		</div>
+		<div id="bills">
+
+			<div class="money-in-drawer">
+				<div class="currency-bills">
+					<div class="outer-square rotate">
+						<div class="inner-square">
+							<div class="inner-circle-bill" id="one">
+								<p class="bill-text">$1</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="ones-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-bills">
+					<div class="outer-square rotate">
+						<div class="inner-square">
+							<div class="inner-circle-bill" id="five">
+								<p class="bill-text">$5</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="fives-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-bills">
+					<div class="outer-square rotate">
+						<div class="inner-square">
+							<div class="inner-circle-bill" id="ten">
+								<p class="bill-text">$10</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="tens-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-bills">
+					<div class="outer-square rotate">
+						<div class="inner-square">
+							<div class="inner-circle-bill" id="twenty">
+								<p class="bill-text">$20</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="twenties-amount"></span></div>
+			</div>
+
+			<div class="money-in-drawer">
+				<div class="currency-bills">
+					<div class="outer-square rotate">
+						<div class="inner-square">
+							<div class="inner-circle-bill" id="hundred">
+								<p class="bill-text">$100</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="amount">$<span id="hundreds-amount"></span></div>
+			</div>
+
+		</div>
+	</div>
+
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+
